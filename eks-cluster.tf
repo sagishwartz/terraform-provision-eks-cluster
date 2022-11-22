@@ -19,7 +19,7 @@ module "eks" {
 
   eks_managed_node_groups = {
     one = {
-      name = "node-group-1"
+      name = "schwartz-node-group"
 
       instance_types = ["t3.small"]
 
@@ -41,9 +41,9 @@ module "eks" {
 
       instance_types = ["t3.medium"]
 
-      min_size     = 1
-      max_size     = 2
-      desired_size = 1
+      min_size     = 0
+      max_size     = 1
+      desired_size = 0
 
       pre_bootstrap_user_data = <<-EOT
       echo 'foo bar'
