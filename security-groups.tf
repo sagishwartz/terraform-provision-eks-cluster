@@ -1,4 +1,4 @@
-resource "aws_security_group" "schwartz_node_group_one" {
+resource "aws_security_group" "node_group_one" {
   name_prefix = "schwartz_node_group_one"
   vpc_id      = module.vpc.vpc_id
 
@@ -13,7 +13,7 @@ resource "aws_security_group" "schwartz_node_group_one" {
   }
 }
 
-resource "aws_security_group" "schwartz_node_group_two" {
+resource "aws_security_group" "node_group_two" {
   name_prefix = "schwartz_node_group_two"
   vpc_id      = module.vpc.vpc_id
 
