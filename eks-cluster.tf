@@ -32,12 +32,12 @@ module "eks" {
       EOT
 
       vpc_security_group_ids = [
-        aws_security_group.schwartz_node_group.id
+        aws_security_group.node_group_one.id
       ]
     }
 
     two = {
-      name = "schwartz-node-group-2"
+      name = "node-group-2"
 
       instance_types = ["t3.medium"]
 
@@ -50,7 +50,7 @@ module "eks" {
       EOT
 
       vpc_security_group_ids = [
-        aws_security_group.schwartz_node_group_two.id
+        aws_security_group.node_group_two.id
       ]
     }
   }
