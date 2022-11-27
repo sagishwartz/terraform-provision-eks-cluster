@@ -14,6 +14,6 @@ spec:
     spec: 
       containers: 
       - name: helloworld 
-        image: sagishwartz/final:153 
+        image: sagishwartz/final:156
         ports: 
         - containerPort: 80
